@@ -1,0 +1,9 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Faire un don · Au Galop du Cœur</title><link rel="stylesheet" href="style.css"></head><body>
+<header><a class="logo" href="index.html">🐴 <span>Au Galop du Cœur</span></a><nav><a href="index.html">Accueil</a><a href="chevaux.html">Nos chevaux</a><a href="dons.html">Donateurs</a><a href="asso.html">L'association</a><a class="active don-link" href="don.html">💚 Faire un don</a><a href="admin.html">🔐 Admin</a></nav></header>
+<main class="page"><div class="don-card"><span class="eyebrow">SOUTENIR LES CHEVAUX</span><h1>💚 Faire un don</h1><p class="lead">Choisis ton montant et indique le nom à afficher dans le classement des donateurs.</p>
+<div class="amounts"><button type="button" onclick="setAmount(5)">5 €</button><button type="button" onclick="setAmount(10)">10 €</button><button type="button" onclick="setAmount(20)">20 €</button><button type="button" onclick="setAmount(50)">50 €</button><button type="button" onclick="setAmount(100)">100 €</button></div>
+<label>Nom du donateur</label><input id="publicDonorName" placeholder="Ton nom ou pseudo" maxlength="80">
+<label>Montant du don (€)</label><input id="publicDonorAmount" type="number" min="0.01" step="0.01" inputmode="decimal" placeholder="Montant libre, sans plafond">
+<button class="btn donate full" onclick="submitPublicDonation()">💚 Faire le don</button>
+<p class="notice">ℹ️ Cette page est une <b>démo</b> : aucun paiement bancaire réel n'est effectué. Le don est seulement enregistré dans la base Supabase pour le classement.</p>
+<p id="donMessage" class="success"></p></div></main><footer>© 2026 Au Galop du Cœur</footer><script src="config.js"></script><script src="app.js"></script></body></html>
